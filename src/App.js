@@ -14,7 +14,7 @@ function App() {
           <Route exact path="/" element={<Home />}/>
           <Route path="/story" element={<MyStory />}/>
         </Routes>
-      <Footer />
+        <Footer id="footer"/>
       </BrowserRouter>
       
     </div>
