@@ -1,6 +1,7 @@
 import Home from './components/Home';
 import MyStory from './components/MyStory';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" element={<Home />}/>
           <Route path="/story" element={<MyStory />}/>
         </Routes>
+      <Footer />
       </BrowserRouter>
       
     </div>
