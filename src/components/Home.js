@@ -6,7 +6,7 @@ function Home() {
 
 
 return (
-    <div className='md:container md:mx-auto border flex items-center justify-center mt-40'>
+    <div className='md:container md:mx-auto border flex items-center justify-center mt-40' >
 
       <div className='w-80 mx-5'>
         <img 
