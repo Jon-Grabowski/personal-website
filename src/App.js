@@ -14,13 +14,14 @@ import './App.css';
 
 import TestScroll from './components/TestScroll';
 function App() {
-  const [homeLinksVisable, setHomeLinksVisable] = useState(false)
+  const [homeLinksVisable, setHomeLinksVisable] = useState(true)
   const location = useLocation()
 
 
     return (
       <div className="App">
-        {homeLinksVisable ? null : <NavBar />}
+        {/* {homeLinksVisable ? null : <NavBar />} */}
+        <NavBar homeLinksVisable={homeLinksVisable}/>
         <Home setHomeLinksVisable={setHomeLinksVisable}/>
         <MyStory />
         <Projects />
