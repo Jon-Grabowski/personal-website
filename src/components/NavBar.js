@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function NavBar() {
 
 return (
-    <div className='flex justify-between border-b py-1 backdrop-opacity-20 backdrop-invert bg-black/10'>
+    <nav className='flex justify-between border-b py-1 bg-white sticky top-0'>
         <div>
             <NavLink to="/" className='pe-4'>Home</NavLink>
         </div>
@@ -17,7 +17,7 @@ return (
         <div>
 
         </div>
-    </div>
+    </nav>
 )
 }
 
