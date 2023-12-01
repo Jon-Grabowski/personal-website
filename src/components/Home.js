@@ -14,7 +14,7 @@ function Home({setHomeLinksVisable}) {
 
   console.log(inView)
   return (
-      <div className='md:container md:mx-auto border flex items-center justify-center min-h-screen' >
+      <div className='md:container md:mx-auto border flex items-center justify-center min-h-screen' id='home'>
 
         <div className='w-80 mx-5'>
           <img 
