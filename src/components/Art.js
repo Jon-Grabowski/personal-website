@@ -3,7 +3,7 @@ import React from 'react'
 function Art() {
 
 return (
-    <div>
+    <div className='h-screen bg-blue-800' id='art'>
         <h1>Art Page</h1>
     </div>
 )

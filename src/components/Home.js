@@ -1,12 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 
 function Home() {
 
 
 return (
-    <div className='md:container md:mx-auto border flex items-center justify-center mt-40' >
+    <div className='md:container md:mx-auto border flex items-center justify-center min-h-screen' >
 
       <div className='w-80 mx-5'>
         <img 
@@ -24,10 +25,38 @@ return (
           <p>Description blah blah blah....</p>
         </div>
         <div className='flex items-center justify-center'>
-          <NavLink to="/story" className='p-3 font-bold'>My Story</NavLink>
-          <NavLink to="/projects" className='p-3 font-bold'>Projects</NavLink>
-          <NavLink to="/music" className='p-3 font-bold'>Music</NavLink>
-          <NavLink to="/art" className='p-3 font-bold'>Art</NavLink>
+          <Link 
+            activeClass="active"
+            to="mystory"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1300} className='p-3 font-bold'>
+            My Story</Link>
+          <Link 
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1200} className='p-3 font-bold'>
+            Projects</Link>
+          <Link 
+            activeClass="active"
+            to="music"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000} className='p-3 font-bold'>
+            Music</Link>
+          <Link 
+            activeClass="active"
+            to="art"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={750} className='p-3 font-bold'>
+            Art</Link>
         </div>
       </div>
 
