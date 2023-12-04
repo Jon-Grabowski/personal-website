@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 function NavBar({homeLinksVisable}) {
     return (
         <nav 
-        className={`flex justify-between border-b py-1 bg-white sticky top-0 ${homeLinksVisable ? 'nav-hidden': 'nav-visible'}`}
+        className={`flex justify-between border-b border-gray-500 py-1 bg-white sticky top-0 bg-black text-gray-300 ${homeLinksVisable ? 'nav-hidden': 'nav-visible'}`}
         >
             <div>
             <Link 
