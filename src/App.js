@@ -19,10 +19,10 @@ function App() {
 
 
     return (
-      <div className="App bg-black">
+      <div className="App bg-gray-900">
         {/* {homeLinksVisable ? null : <NavBar />} */}
         <NavBar homeLinksVisable={homeLinksVisable}/>
-        <div className='bg-black'>
+        <div className='bg-gray-900'>
           <Home setHomeLinksVisable={setHomeLinksVisable}/>
         </div>
         <MyStory />

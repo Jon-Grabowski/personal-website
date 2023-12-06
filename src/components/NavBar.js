@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 function NavBar({homeLinksVisable}) {
     return (
         <nav 
-        className={`flex justify-between border-b border-gray-500 py-1 bg-white sticky top-0 bg-black text-gray-300 ${homeLinksVisable ? 'nav-hidden': 'nav-visible'}`}
+        className={`flex justify-between border-b border-gray-500 py-1 sticky top-0 text-gray-300 bg-gray-900 ${homeLinksVisable ? 'nav-hidden': 'nav-visible'}`}
         >
             <div>
             <Link 
@@ -22,7 +22,7 @@ function NavBar({homeLinksVisable}) {
                     to="mystory"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-1}
                     duration={750} className='p-3 font-bold'>
                     My Story</Link>
                 <Link 
@@ -30,7 +30,7 @@ function NavBar({homeLinksVisable}) {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-1}
                     duration={750} className='p-3 font-bold'>
                     Projects</Link>
                 <Link 
@@ -38,7 +38,7 @@ function NavBar({homeLinksVisable}) {
                     to="music"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-1}
                     duration={750} className='p-3 font-bold'>
                     Music</Link>
                 <Link 
