@@ -13,16 +13,16 @@ function Home({setHomeLinksVisable}) {
 
 
   return (
-      <div className='md:container md:mx-auto flex items-center justify-center min-h-screen text-gray-200' id='home'>
+      <div className=' md:mx-auto grid md:grid-cols-2 items-center min-h-screen text-gray-200 border' id='home'>
 
-        <div className='w-80 mx-5 mb-20' id='home-image'>
+        <div className='w-80 mb-20 border text-center mx-auto' id='home-image'>
           <img 
             src="../images/IMG_1908_CROPPED.jpg"
             className='rounded-full border-2 border-blue-500'
           />
         </div>
 
-        <div className='mb-20 px-16 py-7 border-t-4 border-b-4 border-blue-500 rounded' id='home-name'>
+        <div className='mb-20 mx-auto px-16 py-7 border-t-4 border-b-4 border-blue-500 rounded' id='home-name'>
           <div className='text-top inline-block'>
             <span className='text-9xl font-bold inline-block align-bottom'>J</span>
             <span className="text-8xl font-bold border-b-2 border-purple-700 inline-block align-top">on Grabowski</span>

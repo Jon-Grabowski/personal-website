@@ -17,7 +17,7 @@ function ProjectCard({project}) {
                 className="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
                 {title}
                 </h5>
-                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 text-wrap">
                 {description}
                 </p>
                 <p className="text-xs text-neutral-500 dark:text-neutral-300">
