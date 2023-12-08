@@ -8,10 +8,10 @@ function Projects() {
     })
     console.log(projectCards)
     return (
-        <div className='h-screen bg-green-800 flex items-center justify-center border' id='projects'>
-            <div className='container text-center border'>
+        <div className='min-h-screen bg-green-800 flex items-center justify-center border' id='projects'>
+            <div className='container text-center border flex items-center justify-center'>
                 <h1 className='text-4xl font-bold'>Projects</h1>
-                <div className='flex'>
+                <div className='flex-col'>
                     {projectCards}
                 </div>
             </div>
