@@ -3,7 +3,7 @@ import React from 'react'
 function ProjectCard({project}) {
     const {title, description, tech, github, image} = project
 
-    const techList = tech.map(name => <li>{name}</li>)
+    const techList = tech.map(name => <span className='text-xs p-1 mx-1 bg-blue-900 text-gray-200'>{name}</span>)
     return (
         <div
         className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 md:max-w-xl md:flex-row"
@@ -17,12 +17,15 @@ function ProjectCard({project}) {
                 className="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
                 {title}
                 </h5>
-                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 text-wrap">
+                <p className="mb-4 text-base text-sm text-neutral-600 dark:text-neutral-200 text-wrap">
                 {description}
                 </p>
                 <p className="text-xs text-neutral-500 dark:text-neutral-300">
                 {github}
                 </p>
+                <div className='flex-wrap justify-around'>
+                    {techList}
+                </div>
             </div>
         </div>
     )
