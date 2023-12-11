@@ -26,4 +26,36 @@ const projects = [
     }
 ]
 
-export { projects }
+const education = [
+    {
+        id: 1,
+        schoolName: 'Flatiron School',
+        location: 'Live Remote',
+        degree: 'Certificate of Completion',
+        major: 'Software Engineering',
+        gradYear: '2023',
+        additionalInfo: 'Tech Stack: JavaScript, React, CSS, Python, Flask, SQLalchemys',
+        logo:'../images/Flatiron_logo.png'
+    },
+    {
+        id: 2,
+        schoolName: 'Sullivan County Community College',
+        location: 'Loch Sheldrake, NY',
+        degree: 'Associates Degree',
+        major: 'Major: Accounting',
+        gradYear: '2016',
+        additionalInfo: 'Honors: President\'s List | 4.0 GPA',
+        logo: '../images/cropped-SUNY-sullivan-logo-1.png'
+    },
+    {
+        id: 3,
+        schoolName: 'Northeastern University',
+        location: 'Boston, MA',
+        degree: 'Bachelor of Science',
+        major: 'Major: Music Industry | Minor: Business',
+        gradYear: '2009',
+        additionalInfo: 'Honors: Cum Laude | Dean\'s List',
+        logo:'../images/Northeastern_seal.png'
+    }
+]
+export { projects, education }
