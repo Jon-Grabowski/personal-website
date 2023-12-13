@@ -12,7 +12,7 @@ function NavBar({homeLinksVisable}) {
                     to="home"
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={0}
                     duration={750} className='pe-3 font-bold'>
                     Home</Link>
             </div>
