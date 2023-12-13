@@ -16,10 +16,12 @@ function Projects() {
     const projectCards = projects.map(project => {
         return <ProjectCard key={project.id} project={project}/>
     })
-    console.log(projectCards)
+
     return (
-        <div className='min-h-screen bg-green-800 flex items-center justify-center border' id='projects'>
+        <div className='min-h-screen bg-white flex items-center justify-center border' id='projects'>
+            
             <div className='border grid md:grid-cols-2'>
+
                 <div className='p-2 m-3 rounded bg-gray-900'>
                     <h1 className='text-center p-3 text-3xl text-white'>Projects</h1>
                     <div className=''>
@@ -28,15 +30,18 @@ function Projects() {
                         </div>
                     </div>
                 </div>
-                <div className='p-2 m-3 rounded bg-gray-900'>
-                    <h1 className='text-center p-3 text-3xl text-white'>Resume</h1>
-                    <div className='text-white flex justify-around mb-3'>
+
+                <div className='p-2 m-3 rounded'>
+                    <h1 className='text-center p-3 text-3xl'>Resume</h1>
+                    <div className='flex justify-around mb-3'>
                         <p className='border px-10' onClick={() => {handleToggleClick(true)}}>Experience</p>
                         <p className='border px-10' onClick={() => {handleToggleClick(false)}}>Education</p>
                     </div>
                     {resumeToggle ? <PortfolioExp /> : <PortfolioEducation />}
                 </div>
+
             </div>
+
         </div>
     )
 }

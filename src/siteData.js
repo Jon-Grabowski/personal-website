@@ -45,7 +45,7 @@ const education = [
         major: 'Major: Accounting',
         gradYear: '2016',
         additionalInfo: 'Honors: President\'s List | 4.0 GPA',
-        logo: '../images/cropped-SUNY-sullivan-logo-1.png'
+        logo: '../images/suny_sullivan_logo.png'
     },
     {
         id: 3,
@@ -55,7 +55,7 @@ const education = [
         major: 'Major: Music Industry | Minor: Business',
         gradYear: '2009',
         additionalInfo: 'Honors: Cum Laude | Dean\'s List',
-        logo:'../images/Northeastern_seal.png'
+        logo:'../images/northeastern_logo.png'
     }
 ]
 export { projects, education }

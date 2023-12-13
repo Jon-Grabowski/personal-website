@@ -8,7 +8,7 @@ function PortfolioEducation() {
         return <PortfolioEducationCard key={ed.id} ed={ed}/>
     })
     return (
-        <div>
+        <div className=''>
             {edCards}
         </div>
     )
